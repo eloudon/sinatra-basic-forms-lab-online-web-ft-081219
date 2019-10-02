@@ -13,7 +13,7 @@ class App < Sinatra::Base
   post '/puppy' do
     @name = params[:name]
     @breed = params[:breed]
-    @months_old = params[:age] # name="age" in the form, so params will refer to it as age, not months_old. "name=" section in form input always correspond to params key.
+    @months_old = params[:age] 
 
     erb :display_puppy
  end
